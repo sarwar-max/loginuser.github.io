@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.leave-group {
+  gap: 10px;
+}
+
+.nav-itemBorder1 {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  color: #6a6a6b;
+  border: 0.8px solid #989899;
+  border-radius: 4px;
+  font-size: 15px;
+  padding-left: 5px;
+}
+.nav-itemBorder1 a {
+  font-size: 15px;
+}
+
+.location-text {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding-top: 20px;
+}
+
+/* REcommended Groups */
+.r-groups {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10rem;
+}
+
+.like {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+.like h5,
+i {
+  font-size: 14px;
+}
+
+.flow-groups {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  gap: 2rem;
+}
+.group-imgs {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.imgName {
+  font-weight: bold;
+}
+
+.group-imgs button {
+  width: 73px;
+  border-radius: 14px;
+  background: #edeef0;
+  border: none;
+}
+.group-imgs button:focus {
+  background-color: #000;
+  color: #fff;
+}

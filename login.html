@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <!-- Fontawesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./login.css" />
+    <link rel="icon" href="./img/agt_world-logo.svg" />
+    <title>Logged In User - Scrolled & Location Edit Enabled</title>
+  </head>
+  <body>
+    <!-- Navigation Bar Start -->
+    <header class="header">
+      <!-- logo -->
+      <div class="logo">
+        <a class="navbar-brand" href="#">
+          <img src="./img/whole.svg" alt="logo" />
+        </a>
+      </div>
+
+      <div class="search">
+        <i class="fas fa-search"></i>
+        <input
+          type="text"
+          name="search"
+          id="search"
+          placeholder="Search for your favorite groups in ATG"
+        />
+      </div>
+
+      <!-- account section -->
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <span class="danger">Create a account.</span> It's free
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li>
+              <button
+                class="btn"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Create Account
+              </button>
+            </li>
+            <!-- <li><hr class="dropdown-divider" /></li> -->
+          </ul>
+        </li>
+      </ul>
+    </header>
+    <!-- Navigation Bar End-->
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <p class="modal-title text-success" id="exampleModalLabel">
+              Let's learn, share & inspire each other with our passion for
+              computer engineering. Sign up now 🤘🏼
+            </p>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <form id="form">
+                <div class="social">
+                  <div class="title">Create Account</div>
+                  <div class="question">
+                    Already Have an Account? <br />
+                    <span>Sign In</span>
+                  </div>
+
+                  <div class="btn">
+                    <div class="btn-1">
+                      <img
+                        src="https://img.icons8.com/color/30/000000/google-logo.png"
+                      />
+                      Sign Up
+                    </div>
+                    <div class="btn-2">
+                      <img
+                        src="https://img.icons8.com/ios-filled/30/ffffff/facebook-new.png"
+                      />
+                      Sign Up
+                    </div>
+                  </div>
+                </div>
+
+                <!-- /** 
+          * ! user name Input here
+         **/ -->
+
+                <div>
+                  <label for="username">User Name</label>
+                  <i class="fas fa-user"></i>
+                  <input
+                    type="text"
+                    name="username"
+                    id="username"
+                    placeholder="Full Name"
+                  />
+                  <div class="error"></div>
+                </div>
+
+                <!-- /** 
+          * ! Email Input here
+         **/ -->
+
+                <div>
+                  <label for="email">Email</label>
+                  <i class="far fa-envelope"></i>
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="abc@gmail.com"
+                  />
+                  <div class="error"></div>
+                </div>
+
+                <!-- Password Input her -->
+
+                <div>
+                  <label for="password">Password</label>
+                  <i class="fas fa-lock"></i>
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    placeholder="Password here"
+                  />
+                  <i class="far fa-eye eye-icon"></i>
+                  <div class="error"></div>
+                </div>
+
+                <!-- Confirm Password Input her -->
+                <div>
+                  <label for="password">Confirm Password</label>
+                  <i class="fas fa-lock"></i>
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    placeholder="Confirm Password"
+                  />
+                  <i class="far fa-eye eye-icon"></i>
+                  <div class="error"></div>
+                </div>
+
+                <button type="submit" id="submit">Create Account</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- bg-img section strart -->
+    <div class="container-section">
+      <div class="container-img">
+        <h1>Computer Engineering</h1>
+        <p>142,765 Computer Engineers follow this</p>
+      </div>
+    </div>
+    <!-- bg-img section end -->
+
+    <div class="write-note">
+     <i class="fas fa-pencil-alt"></i>
+    </div>
+
+    <!-- Post section start -->
+    <nav id="navbar-example2" class="navbar container navbar-light">
+      <li class="nav-item navBorder-bottom">
+        <a class="navbar-brand post-item post-mark" href="#">All Posts(32)</a>
+        <a class="navbar-brand post-item pColor" href="#">Article</a>
+        <a class="navbar-brand post-item pColor" href="#">Event</a>
+        <a class="navbar-brand post-item pColor" href="#">Education</a>
+        <a class="navbar-brand post-item pColor" href="#">job</a>
+      </li>
+      <ul class="nav leave-group nav-pills">
+        <li class="nav-item nav-itemBorder1 group">
+          <!-- <img src="./img/Vector.svg" alt="group" /> -->
+          <i class="fas fa-sign-out-alt"></i>
+          <a class="nav-link navbar-brand" href="#scrollspyHeading2"
+            >Leave Group</a
+          >
+        </li>
+        <li class="nav-item dropdown nav-itemBorder">
+          <a
+            class="nav-link dropdown-toggle navbar-brand"
+            data-bs-toggle="dropdown"
+            href="#"
+            role="button"
+            aria-expanded="false"
+            >Write a Post</a
+          >
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="#scrollspyHeading3">Write a Post</a>
+            </li>
+            <li>
+              <a class="dropdown-item" href="#scrollspyHeading4">Write a Post</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <!-- Post section end -->
+
+    <!-- Card start -->
+    <div class="container container-item my-3">
+      <div class="card-container">
+        <!-- card-1 -->
+        <div class="card card-content">
+          <img
+            src="./img/Rectangle 5.png"
+            class="card-img-top"
+            alt="card-img"
+          />
+          <div class="card-body">
+            <p>✍ Article</p>
+            <div class="text-menu">
+              <h4>
+                What if famous brands had regular fonts? Meet RegulaBrands!
+              </h4>
+              <i class="fas fa-ellipsis-h"></i>
+            </div>
+            <p class="card-text">
+              I’ve worked in UX for the better part of a decade. From now on, I
+              plan to rei…
+            </p>
+            <div class="card-footers">
+              <div class="img-content">
+                <img src="./img/Sarthak Kamra.png" alt="Sarthak Kamra" />
+                <span>Sarthak Kamra</span>
+              </div>
+              <div class="like-share">
+                <img src="./img/eye.svg" alt="eye" /> <span>1.4k views</span>
+                <i class="fas fa-share-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card-2 -->
+        <div class="card card-content my-4">
+          <img
+            src="./img/education-bg.png"
+            class="card-img-top"
+            alt="card-img"
+          />
+          <div class="card-body">
+            <p>🔬️ Education</p>
+            <div class="text-menu">
+              <h4>
+                Tax Benefits for Investment under National Pension Scheme
+                launched by Government
+              </h4>
+              <i class="fas fa-ellipsis-h"></i>
+            </div>
+            <p class="card-text">
+              I’ve worked in UX for the better part of a decade. From now on, I
+              plan to rei…
+            </p>
+            <div class="card-footers">
+              <div class="img-content">
+                <img src="./img/Sarah West.png" alt="Sarah West" />
+                <span>Sarah West</span>
+              </div>
+              <div class="like-share">
+                <img src="./img/eye.svg" alt="eye" /> <span>1.4k views</span>
+                <i class="fas fa-share-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card-3 -->
+        <div class="card card-content my-4">
+          <img src="./img/meetup.png" class="card-img-top" alt="card-img" />
+          <div class="card-body">
+            <p>🗓️ Meetup</p>
+            <div class="text-menu">
+              <h4>Finance & Investment Elite Social Mixer @Lujiazui</h4>
+              <!-- Menu start-->
+              <div class="dropdown">
+                <i
+                  class="fas fa-ellipsis-h menu-focas"
+                  type="button"
+                  id="dropdownMenuButton1"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                ></i>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Edit</a></li>
+                  <li><a class="dropdown-item" href="#">Report</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Option 3</a>
+                  </li>
+                </ul>
+              </div>
+              <!-- Menu end -->
+            </div>
+
+            <div class="calender-location">
+              <i class="far fa-calendar-alt"> Fri, 12 Oct, 2018</i>
+              <i class="fas fa-map-marker-alt"> Ahmedabad, India</i>
+            </div>
+
+            <div class="d-grid gap-2 my-4">
+              <button class="btn three-color btn-light" type="button">
+                Visit Website
+              </button>
+            </div>
+
+            <div class="card-footers">
+              <div class="img-content">
+                <img src="./img/Ronal-Jones.png" alt="Sarah West" />
+                <span>Ronal Jones</span>
+              </div>
+              <div class="like-share">
+                <img src="./img/eye.svg" alt="eye" /> <span>1.4k views</span>
+                <i class="fas fa-share-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card-4 -->
+        <div class="card card-content my-4">
+          <div class="card-body">
+            <p>💼️ Job</p>
+            <div class="text-menu">
+              <h4>Software Developer</h4>
+              <i class="fas fa-ellipsis-h"></i>
+            </div>
+            <div class="calender-location">
+              <p class="card-text">
+                <img src="./img/pvltd.svg" alt="Private Ltd." />
+                Innovaccer Analytics Private Ltd.
+              </p>
+              <i class="fas fa-map-marker-alt"> Noida, India</i>
+            </div>
+
+            <div class="d-grid gap-2 my-4">
+              <button class="btn four-color btn-light" type="button">
+                Apply on Timesjobs
+              </button>
+            </div>
+
+            <div class="card-footers">
+              <div class="img-content">
+                <img src="./img/Joseph Gray.png" alt="Joseph Gray" />
+                <span>Joseph Gray</span>
+              </div>
+              <div class="like-share">
+                <img src="./img/eye.svg" alt="eye" /> <span>1.4k views</span>
+                <i class="fas fa-share-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- location container -->
+      <div class="location-container">
+        <div class="input-location">
+          <i class="fas fa-map-marker-alt"></i>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="|Enter your location"
+          />
+          <i class="fas fa-pen"></i>
+        </div>
+        <div class="location-text">
+          <i class="fas fa-exclamation-circle"></i>
+          <p></p>
+            Your location will help us serve better and extend a personalised
+            experience.</p>
+          </p>
+        </div>
+        <div class="r-groups">
+         <div class="like">
+          <i class="fas fa-thumbs-up"></i>
+          <h5>RECOMMENDED GROUPS</h5>
+         </div>
+         <div class="flow-groups">
+          <div class="group-imgs">
+           <div class="imgName">
+             <img src="./img/group-img1.png" alt="Leisure"> <span> Leisure</span>
+           </div>
+            <button id="followed" onclick="follow()">Follow</button>
+          </div>
+           <div class="group-imgs">
+           <div class="imgName">
+             <img src="./img/group-img2.png" alt="Activism"> <span> Activism</span>
+           </div>
+            <button>Follow</button>
+          </div>
+           <div class="group-imgs">
+           <div class="imgName">
+             <img src="./img/group-img3.png" alt="MBA"> <span> MBA</span>
+           </div>
+            <button>Follow</button>
+          </div>
+           <div class="group-imgs">
+           <div class="imgName">
+             <img src="./img/group-img4.png" alt="Philosophy"> <span> Philosophy</span>
+           </div>
+            <button>Follow</button>
+          </div>
+           <div class="group-imgs">
+           <div class="imgName">
+             <img src="" alt="">
+           </div>
+            <a href="#">See More...</a>
+          </div>
+         </div>
+        </div>
+      </div>
+    </div>
+    <!-- Card end -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
