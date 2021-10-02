@@ -74,3 +74,159 @@ i {
   background-color: #000;
   color: #fff;
 }
+
+/* Modal section */
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+/**
+* ! style rules for content section
+**/
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 55%;
+  min-height: 100vh;
+  padding: 10px 20px;
+}
+
+.image {
+  background-image: url('./img/form-bg.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  /* border: 2px solid black; */
+  height: 65%;
+}
+
+.text {
+  text-align: center;
+  font-size: 11px;
+}
+
+/**
+* ! style rules for form section
+**/
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 45%;
+}
+/* !!!!!!!!!!!!!!!!!!!!!!!!!! */
+.form-fill {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  gap: 0;
+}
+.form-fill input {
+  width: 100%;
+  background-color: #f7f8fa;
+  padding: 10px 15px;
+  outline: none;
+  border: 1px solid #d9d9db;
+}
+.form-fill .fullName {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+}
+.form-btn {
+  border-radius: 20px;
+}
+/* !!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+.title {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+form div {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+/**
+* ! style rules for social section
+**/
+
+.btn-form {
+  padding-top: 30px;
+  gap: 15px;
+}
+
+.btn-form .btn-1,
+.btn-2 {
+  padding: 10px 5px;
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #c4c4c4;
+  border-radius: 8px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.btn-form .btn-2 {
+  background-color: #4f70b5;
+  color: white;
+}
+
+.question {
+  font-size: 15px;
+}
+
+.question {
+  padding-left: 8rem;
+}
+.question span {
+  color: #2f6ce5;
+  cursor: pointer;
+}
+
+/**
+* ! style rules for form icons
+**/
+
+.form-fill img {
+  position: absolute;
+  padding: 15px;
+  right: 0;
+}
+
+/**
+* ! Media Queries are here
+**/
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+
+  form,
+  .content {
+    width: 100%;
+  }
+
+  .image {
+    height: 70vh;
+  }
+}
+
+@media (max-width: 425px) {
+  form {
+    padding: 20px;
+  }
+}
